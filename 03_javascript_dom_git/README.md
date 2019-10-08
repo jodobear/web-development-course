@@ -1,4 +1,4 @@
-# Lecture plan
+# Lecture
 
 0. Home task
 
