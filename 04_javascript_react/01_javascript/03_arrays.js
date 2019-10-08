@@ -1,12 +1,12 @@
 var a = ['dog', 'cat', 'hen'];
-a.length; // ?
+console.log(a.length); // ?
 
 
 
 
 var a = ['dog', 'cat', 'hen'];
 a[100] = 'fox';
-a.length; // ?
+console.log(a.length); // ?
 
 
 
@@ -23,15 +23,15 @@ for (const element of a) {
 }
 
 
-['dog', 'cat', 'hen'].forEach(function(value, index, array) {
-    console.log(value);
+['dog', 'cat', 'hen'].forEach(function(value, index, array) { //value is current value
+    console.log(value, index, array);
 });
 
 
 
 
 // appending an element to array:
-a.push(item);
+console.log(a.push(item));
 
 
 

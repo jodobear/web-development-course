@@ -9,3 +9,4 @@ var you = new Person('You', 24);
 
 
 // this keyword - ?
+// reference to the object within which it is used.

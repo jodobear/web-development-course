@@ -30,10 +30,10 @@ class Rabbit extends Animal {
     }
 }
 
-let rabbit = new Rabbit("White Rabbit");
+let whiteRabbit = new Rabbit("White Rabbit"); //creates an instance of Class Rabbit
 
-rabbit.run(5); // White Rabbit runs with speed 5.
-rabbit.hide(); // White Rabbit hides!
+whiteRabbit.run(5); // White Rabbit runs with speed 5.
+whiteRabbit.hide(); // White Rabbit hides!
 
 
 

@@ -2,8 +2,9 @@
 
 // animal has methods
 let animal = {
-    walk() {
-        if (!this.isSleeping) {
+    // isSleeping: false,  # when undefined
+    walk() {            // #        |
+        if (!this.isSleeping) { // # ! undefined == true
             alert(`I walk`);
         }
     },

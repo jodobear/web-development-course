@@ -3,10 +3,11 @@ let animal = {
 };
 
 let rabbit = {
-    jumps: true
+    jumps: true,
+    // __proto__: animal  # another way to define inheritance.
 };
 
-rabbit.__proto__ = animal;
+rabbit.__proto__ = animal; //rabbit object should extend it's property to animal object if it doesn't find it in itself, it will inherit the property within itself.
 
 console.log(rabbit.eats); // ?
 console.log(rabbit.jumps); // ?
