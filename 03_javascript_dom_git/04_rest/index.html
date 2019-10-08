@@ -59,35 +59,35 @@
 <body>
 <div class="quote-container">
     <div class="quote">
-        “<span id="quote">I love deadlines. I like the whooshing sound they make as they fly by.</span>“
+        <span id="quote"></span>
     </div>
-    <div class="author">— <span id="author">Douglas Adams</span></div>
+    <div class="author">— <span id="author"></span></div>
 </div>
 <button class="load-button" id="button">Load next</button>
 
 <script>
 
-    // // Select elements by ids
-    // var quote = $('#quote');
-    // var author = $('#author');
-    // var button = $('#button');
-    //
-    // // Add button click handler
-    // button.click(function () {
-    //
-    //     button.text('Loading...');
-    //     button.attr('disabled', true);
-    //
-    //     // When button is clicked, request url for new quote
-    //     $.ajax({
-    //         url: 'http://quotes.stormconsultancy.co.uk/random.json'
-    //     }).done(function (data) {
-    //         quote.text(data.quote);
-    //         author.text(data.author);
-    //         button.text('Load next');
-    //         button.attr('disabled', false);
-    //     });
-    // });
+    // Select elements by ids
+    var quote = $('#quote');
+    var author = $('#author');
+    var button = $('#button');
+
+    // Add button click handler
+    button.click(function () {
+
+        button.text('Loading...');
+        button.attr('disabled', true);
+
+        // When button is clicked, request url for new quote
+        $.ajax({
+            url: 'http://quotes.stormconsultancy.co.uk/random.json'
+        }).done(function (data) {
+            quote.text(data.quote);
+            author.text(data.author);
+            button.text('Load next');
+            button.attr('disabled', false);
+        });
+    });
 
 </script>
 
